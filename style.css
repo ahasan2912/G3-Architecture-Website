@@ -267,3 +267,9 @@ footer div{
         margin-top: 20px;
     }
 }
+/* mid level laptop */
+@media screen and (min-width: 992px) and (max-width: 1080px){
+    .our-teatures {
+        margin-left: 80px;
+    }
+}
