@@ -104,14 +104,17 @@ main > section {
 .of-our{
     color: #131313;
 }
-.features{
+.features-color{
     color: #FF900E;
 }
 .features-description{
     color: rgba(114, 114, 114, 1);
     margin-bottom: 32px;
 }
-
+/* Enjoy Features */
+.features-section-title{
+    color: #131313;
+}
 /* Some fact Related Style */
 .facts-container{
     display: grid;
@@ -141,7 +144,39 @@ main > section {
     margin-top: 10px;
 
 }
-
+#features-section-title{
+    border-left:5px solid #FF900E;
+    padding-left: 20px;
+}
+.features{
+    gap: 100px;
+}
+.features-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.features-card .features-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -80px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.features-architect img{
+    width: 100%;
+}
  /* Sponsor info */
  .sponsor-info{
     max-width: 540px;
@@ -159,11 +194,22 @@ main > section {
     font-size: 3rem;
     font-weight: 700;
 }
+footer{
+    max-width: 1440px;
+    margin: 100px auto;
+    text-align: center;
+    font: 1.25rem;
+}
+footer div{
+    padding: 20px;
+    border-radius: 6px;
+}
 /* Responsive media queary */
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-link, 
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .teams-ima-container{
@@ -186,12 +232,17 @@ main > section {
         gap: 30px;
         justify-items: center;
     }
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 }
 /* Medium  size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .navbar,
     .nav-link,
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .our-teatures{
@@ -210,5 +261,9 @@ main > section {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         justify-items: center;
+    }
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
